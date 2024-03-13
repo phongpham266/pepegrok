@@ -94,8 +94,7 @@
                <div class="home__buttons">
                   <a href="#" class="button">
                      <span>
-                        <img style="width: 40px; height: 40px;" 
-                        class="pinksale" src="assets/img/pinksale.png">
+                        <img style="width: 40px; height: 40px;" class="pinksale" src="assets/img/pinksale.png">
                      </span>
 
                      PRESALE
@@ -103,8 +102,7 @@
 
                   <a href="#" class="button">
                      <span>
-                        <img style="width: 40px; height: 40px; " 
-                        class="pinksale" src="assets/img/ace.png">
+                        <img style="width: 40px; height: 40px; " class="pinksale" src="assets/img/ace.png">
                      </span>
 
                      AUDIT BY ACE
@@ -124,32 +122,40 @@
                </h2>
 
                <p class="new__description">
-                  $PEPEGROK has had it up to here with the endless game 
-                  of hot potato with those derivative Shiba Cum Turbo 
+                  $PEPEGROK has had it up to here with the endless game
+                  of hot potato with those derivative Shiba Cum Turbo
                   Floki Moon Inu coins. The Inus have had their moment,
-                   but now it's time for the $PEPEGROK meme to reclaim its 
-                   throne as the ruler of the meme kingdom.
+                  but now it's time for the $PEPEGROK meme to reclaim its
+                  throne as the ruler of the meme kingdom.
 
                   <br><br><br>
 
-                  $PEPEGROK strides in to revive the glory days of memecoins! 
-                  Stealth launched with presale, tokens burned 50%, no team tokens, tax 2% and auto burn. Contract 
-                  renounced, $PEPEGROK is the people's coin, forever. Powered by pure 
+                  $PEPEGROK strides in to revive the glory days of memecoins!
+                  Stealth launched with presale, tokens burned 50%, no team tokens, tax 2% and auto burn. Contract
+                  renounced, $PEPEGROK is the people's coin, forever. Powered by pure
                   memetic energy, let $PEPEGROK lead the charge into the memecoin revolution!
                </p>
 
                <div class="social-link-about">
-                  <div class="tooltip"><img src="assets/img/pcs1.png" alt="PancakeSwap"><span class="tooltiptext">PancakeSwap</span></div>
-                  <div class="tooltip"><img src="assets/img/dex-view.png" alt="DexView"><span class="tooltiptext">DexView</span></div>
-                  <div class="tooltip"><img src="assets/img/pinksale.png" alt="PinkSale"><span class="tooltiptext">PinkSale</span></div>
-                  <div class="tooltip"><img src="assets/img/coingecko.png" alt="CoinGecko"><span class="tooltiptext">CoinGecko</span></div>
+                  <div class="tooltip"><img src="assets/img/pcs1.png" alt="PancakeSwap"><span
+                        class="tooltiptext">PancakeSwap</span></div>
+                  <div class="tooltip"><img src="assets/img/dex-view.png" alt="DexView"><span
+                        class="tooltiptext">DexView</span></div>
+                  <div class="tooltip"><img src="assets/img/pinksale.png" alt="PinkSale"><span
+                        class="tooltiptext">PinkSale</span></div>
+                  <div class="tooltip"><img src="assets/img/coingecko.png" alt="CoinGecko"><span
+                        class="tooltiptext">CoinGecko</span></div>
                </div>
-               
+
                <div class="social-link-about">
-                  <div class="tooltip"><img src="assets/img/cm c.png" alt="CMC"><span class="tooltiptext">CMC</span></div>
-                  <div class="tooltip"><img src="assets/img/bitmart.png" alt="BitMart"><span class="tooltiptext">BitMart</span></div>
-                  <div class="tooltip"><img src="assets/img/bitget.png" alt="Bitget"><span class="tooltiptext">Bitget</span></div>
-                  <div class="tooltip"><img src="assets/img/binance.png" alt="Binance"><span class="tooltiptext">Binance</span></div>
+                  <div class="tooltip"><img src="assets/img/cm c.png" alt="CMC"><span class="tooltiptext">CMC</span>
+                  </div>
+                  <div class="tooltip"><img src="assets/img/bitmart.png" alt="BitMart"><span
+                        class="tooltiptext">BitMart</span></div>
+                  <div class="tooltip"><img src="assets/img/bitget.png" alt="Bitget"><span
+                        class="tooltiptext">Bitget</span></div>
+                  <div class="tooltip"><img src="assets/img/binance.png" alt="Binance"><span
+                        class="tooltiptext">Binance</span></div>
                </div>
 
             </div>
@@ -231,6 +237,16 @@
             <img src="assets/img/pepe 6 WEB.png" alt="image" class="care__img special-img">
 
             <ul class="care__list">
+
+               <li class="care__item">
+                  <i class="ri-checkbox-fill"></i>
+                  <p class="truncate" data-text="0x2Ed5Af89E586a353459AD0A24Cc6e8ba23c5422e" 
+                  title="0x2Ed5Af89E586a353459AD0A24Cc6e8ba23c5422e">
+                     CA: 0x2Ed5Af89E586a353459AD0A24Cc6e8ba23c5422e
+                  </p>
+                  <i id="copyCA" class="ri-file-copy-2-line" title="Copy"></i>
+               </li>
+
                <li class="care__item">
                   <i class="ri-checkbox-fill"></i>
                   <p>
@@ -484,6 +500,35 @@
          event => event.preventDefault()
       );
 
+      document.addEventListener("DOMContentLoaded", function () {
+         var truncateDivs = document.querySelectorAll('.truncate');
+         truncateDivs.forEach(function (div) {
+            var text = div.dataset.text;
+            var maxLength = 20;
+            if (text.length > maxLength) {
+               var start = text.substr(0, (maxLength - 3) / 2);
+               var end = text.substr(text.length - (maxLength - 3) / 2);
+               div.textContent = start + ' . . . . . . . . . .' + end;
+            } else {
+               div.textContent = text;
+            }
+         });
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+         var copyButton = document.getElementById('copyCA');
+         var textToCopy = "0x2Ed5Af89E586a353459AD0A24Cc6e8ba23c5422e"; 
+
+         copyButton.addEventListener("click", function () {
+            var textarea = document.createElement("textarea");
+            textarea.value = textToCopy;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textarea);
+            alert("Copied: " + textToCopy);
+         });
+      });
    </script>
 </body>
 
