@@ -353,11 +353,6 @@ img {
   opacity: 1;
 }
 
-.truncate {
-  white-space: nowrap;
-  overflow: hidden;
-}
-
 
 /*=============== NEWS ===============*/
 .new__data {
@@ -884,7 +879,7 @@ img {
   .contact__content {
     order: -1;
     text-align: initial;
-    row-gap: 2.5rem;
+    row-gap: 1.1rem;
   }
 
   .contact__social {
