@@ -479,11 +479,16 @@ img {
   display: flex;
   column-gap: .5rem;
   align-items: flex-start;
+  align-items: center;
 }
 
 .care__item i {
   font-size: 1.5rem;
   color: var(--first-color);
+}
+
+.care__item a{
+  color: white;
 }
 
 /*=============== CONTACT ===============*/
