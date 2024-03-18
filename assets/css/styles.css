@@ -101,6 +101,7 @@ img {
 
 .buytext{
   font-weight: bold;
+  color: white;
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
@@ -924,3 +925,204 @@ img {
     right: 3rem;
   }
 }
+
+.staking{
+  width: 100%;
+  height: 500px;
+  border: 1px solid white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  background-image: url(../img/background_staking.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.staking_container{
+  width: 85%;
+  height: 100%;
+}
+
+.staking_title{
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 13%;
+  font-family: var(--body-font);
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.staking_input{
+  position: relative;
+  width: 100%;
+  height: 10%;
+}
+
+.staking_input input{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-top: 3px;
+  font-family: var(--body-font);
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+  border: none;
+}
+
+.pepegrok_info{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  top: 0;
+  left: 190px;
+}
+
+.pepegrok_info img{
+  width: 34px;
+  padding-right: 5px;
+}
+
+.pepegrok_info span{
+  font-family: var(--body-font);
+  color: gray;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.staking_button{
+  height: 13%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.staking_button button{
+  height: 60%;
+  width: 30%;
+  border-radius: 10px;
+  font-family: var(--body-font);
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  background-color: var(--first-color);
+  border: none;
+  text-shadow: 0px 0px 5px rgb(0, 0, 0)
+}
+
+.staking_button button:first-child{
+  background-color: white;
+  color: black;
+  text-shadow: none;
+}
+
+.staking_button button:last-child{
+  background-color: rgb(74, 126, 238);
+}
+
+
+.staking_balance{
+  height: 10%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+}
+
+.staking_approve{
+  position: relative;
+  height: 13%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.staking_approve button{
+  height: 60%;
+  width: 100%;
+  border-radius: 10px;
+  font-family: var(--body-font);
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  background-color: var(--first-color);
+  border: none;
+  text-shadow: 0px 0px 5px rgb(0, 0, 0)
+}
+
+.staking_detail{
+  height: 20%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.staking_detail_title{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.staking_detail_title span{
+  font-family: var(--body-font);
+  color: white;
+  font-size: 15px;
+}
+
+.staking_value{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: right;
+}
+
+.staking_value span{
+  font-family: var(--body-font);
+  color: white;
+  font-size: 15px;
+}
+
+.staking_claim{
+  height: 13%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.staking_claim button{
+  height: 60%;
+  width: 100%;
+  border-radius: 10px;
+  font-family: var(--body-font);
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  background-color: var(--first-color);
+  border: none;
+  text-shadow: 0px 0px 5px rgb(0, 0, 0)
+}
+
