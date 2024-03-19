@@ -79,3 +79,14 @@ sr.reveal(`.home__img, .new__data, .care__img, .contact__content, .footer`)
 sr.reveal(`.home__data, .care__list, .contact__img`, { delay: 500 })
 sr.reveal(`.new__card`, { delay: 500, interval: 100 })
 sr.reveal(`.shop__card`, { interval: 100 })
+
+// Get references to the chat button and chat window
+const chatButton = document.getElementById('chatButton');
+const chatWindow = document.getElementById('chatWindow');
+
+// Add event listener to the chat button
+chatButton.addEventListener('click', function() {
+  // Toggle the 'hidden' class on the chat window to show/hide it
+  chatWindow.classList.toggle('hidden');
+});
+
